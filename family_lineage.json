@@ -1,0 +1,387 @@
+{
+    "family_tree": {
+      "name_np": "विश्नुदत्त",
+      "name_en": "Vishnudatta",
+      "spouse_np": "कैलाशकुमारी",
+      "spouse_en": "Kailashkumari",
+      "siblings" : ["उमाकान्त", "गौरीकान्त"],
+      "children": [
+        {  
+            "name_np": "काशीनाथ",
+            "name_en": "Kashinath",
+            "spouse_np": "पवित्राकुमारी",
+            "spouse_en": "Pavitrakumari",
+            "notes": "Top right note: उमाकान्त -> गौरीकान्त [Umakant -> Gaurikant]",
+            "relationship": "son",
+            "children": [
+                {
+                "name_np": "छविलाल/केरनाखर",
+                "name_en": "Chhabilal/ Keranakhar",
+                "spouse_np": "हरिमाया",
+                "spouse_en": "Harimaya",
+                "notes": "छोरीहरु ५ वटी [Daughters - 5 daughters]",
+                "children": [
+                    {
+                    "name_np": "धर्मप्रसाद",
+                    "name_en": "Dharmaprasad",
+                    "spouse_np": "हरिमाया/धनमाया",
+                    "spouse_en": "Harimaya/Dhanmaya",
+                    "relationship": "son",
+                    "children": [
+                        {
+                        "name_np": "गोविन्द",
+                        "name_en": "Govinda",
+                        "spouse_np": "केशव कुमारी",
+                        "spouse_en": "Keshav Kumari",
+                        "children": [
+                            {
+                            "name_np": "केदार",
+                            "name_en": "Kedar",
+                            "spouse_np": "उमा",
+                            "spouse_en": "Uma",
+                            "relationship": "son",
+                            "children": [
+                                { "name_np": "संजीव", "name_en": "Sanjeev", "relationship": "son" },
+                                { "name_np": "समिर", "name_en": "Samir", "relationship": "son" }
+                            ]
+                            },
+                            {
+                            "name_np": "नारायण",
+                            "name_en": "Narayan",
+                            "spouse_np": "",
+                            "spouse_en": "",
+                            "relationship": "son",
+                            "children": [
+                                { "name_np": "संरक्षण", "name_en": "Samrakshan", "relationship": "son" },
+                                { "name_np": "सम्पदा", "name_en": "Sampada", "relationship": "daughter" }
+                            ]
+                            },
+                            {
+                            "name_np": "भगवान",
+                            "name_en": "Bhagawan",
+                            "spouse_np": "सविता",
+                            "spouse_en": "Savita",
+                            "relationship": "son",
+                            "children": [
+                                { "name_np": "सक्षम", "name_en": "Saksham", "relationship": "son" },
+                                { "name_np": "सन्ध्या", "name_en": "Sandhya", "relationship": "daughter" }
+                            ]
+                            },
+                            { "name_np": "इन्दिरा", "name_en": "Indira", "relationship": "daughter" },
+                            { "name_np": "लक्ष्मी", "name_en": "Lakshmi", "relationship": "daughter" },
+                            { "name_np": "संगीता", "name_en": "Sangita", "relationship": "daughter" }
+                        ]
+                        },
+                        {
+                        "name_np": "ऋषिप्रसाद",
+                        "name_en": "Rishiprasad",
+                        "spouse_np": "मिठू",
+                        "spouse_en": "Mithu",
+                        "relationship": "son",
+                        "children": [
+                            {
+                            "name_np": "देवुप्रसाद",
+                            "name_en": "Devu Prasad",
+                            "spouse_np": "शशी",
+                            "spouse_en": "Shashi",
+                            "relationship": "son",
+                            "children": [
+                                { "name_np": "", "name_en": "", "relationship": "daughter" },
+                                { "name_np": "आदित्य", "name_en": "Aditya", "relationship": "son" }
+                            ]
+                            },
+                            { "name_np": "विन्दा", "name_en": "Vinda", "relationship": "daughter" },
+                            { "name_np": "विद्या", "name_en": "Vidya", "relationship": "daughter" }
+                        ]
+                        },
+                        {
+                        "name_np": "बद्री प्रसाद",
+                        "name_en": "Badri Prasad",
+                        "spouse_np": "ज्ञानु",
+                        "spouse_en": "Gyanu",
+                        "relationship": "son",
+                        "children": [
+                            {
+                            "name_np": "बासुदेव",
+                            "name_en": "Basudev",
+                            "spouse_np": "लक्ष्मी",
+                            "spouse_en": "Lakshmi",
+                            "relationship": "son",
+                            "children": [
+                                { "name_np": "पवन", "name_en": "Pawan", "relationship": "son" },
+                                { "name_np": "पर्वत", "name_en": "Parvat", "relationship": "son" }
+                            ]
+                            },
+                            { "name_np": "जुना", "name_en": "Juna", "relationship": "daughter" },
+                            { "name_np": "गोमा", "name_en": "Goma", "relationship": "daughter" },
+                            { "name_np": "सम्झना", "name_en": "Samjhana", "relationship": "daughter" }
+                        ]
+                        },
+                        { "name_np": "मिठू", "name_en": "Mithu", "relationship": "daughter" },
+                        { "name_np": "सावित्री", "name_en": "Sabitri", "relationship": "daughter" },
+                        { "name_np": "गायत्री", "name_en": "Gayatri", "relationship": "daughter" },
+                        { "name_np": "सरस्वती", "name_en": "Saraswati", "relationship": "daughter" }
+                    ]
+                    },
+                    {
+                    "name_np": "केशवप्रसाद",
+                    "name_en": "Keshavprasad",
+                    "spouse_np": "विष्णुमाया/खेमकुमारी",
+                    "spouse_en": "Vishnumaya/Khemakumari",
+                    "relationship": "son",
+                    "children": [
+                        {
+                        "name_np": "विष्णुप्रसाद",
+                        "name_en": "Bishnuprasad",
+                        "spouse_np": "भवानी",
+                        "spouse_en": "Bhawani",
+                        "relationship": "son",
+                        "children": [
+                            {
+                            "name_np": "शंकर",
+                            "name_en": "Shankar",
+                            "spouse_np": "लक्ष्मी",
+                            "spouse_en": "Lakshmi",
+                            "relationship": "son",
+                            "children": [
+                                { "name_np": "शृजन", "name_en": "Shrijan", "relationship": "son" },
+                                { "name_np": "स्वस्तिका", "name_en": "Swastika", "relationship": "daughter" }
+                            ]
+                            },
+                            {
+                            "name_np": "पदम",
+                            "name_en": "Padam",
+                            "spouse_np": "संगीता",
+                            "spouse_en": "Sangita",
+                            "relationship": "son",
+                            "children": [
+                                { "name_np": "प्रशिव", "name_en": "Prashiv", "relationship": "son" },
+                                { "name_np": "प्रशन्न", "name_en": "Prashanna", "relationship": "son" }
+                            ]
+                            },
+                            { "name_np": "रमा", "name_en": "Rama", "relationship": "daughter" }
+                        ]
+                        },
+                        {
+                        "name_np": "अच्युतप्रसाद",
+                        "name_en": "Achyutprasad",
+                        "spouse_np": "लता",
+                        "spouse_en": "Lata",
+                        "relationship": "son",
+                        "children": [
+                            {
+                            "name_np": "उज्ज्वल",
+                            "name_en": "Ujjwal",
+                            "spouse_np": "पुनम",
+                            "spouse_en": "Punam",
+                            "relationship": "son",
+                            "children": [
+                                { "name_np": "क्रिज्जल", "name_en": "Krijjal", "relationship": "son" }
+                            ]
+                            },
+                            { "name_np": "सृष्टि", "name_en": "Sristi", "relationship": "daughter" }
+                        ]
+                        },
+                        {
+                        "name_np": "हरिप्रसाद",
+                        "name_en": "Hariprasad",
+                        "spouse_np": "बिमला",
+                        "spouse_en": "Bimala",
+                        "relationship": "son",
+                        "children": [
+                            { "name_np": "प्रतिक", "name_en": "Pratik", "spouse_en": "Rakshya", "relationship": "son" },
+                            { "name_np": "प्रज्ञा", "name_en": "Pragya", "relationship": "daughter" }
+                        ]
+                        },
+                        {
+                        "name_np": "शिवप्रसाद",
+                        "name_en": "Shivaprasad",
+                        "spouse_np": "शृजना",
+                        "spouse_en": "Shrijana",
+                        "relationship": "son",
+                        "children": [
+                            { "name_np": "सौगात", "name_en": "Saugat", "relationship": "son" },
+                            { "name_np": "सुमेधा", "name_en": "Sumedha", "relationship": "daughter" }
+                        ]
+                        },
+                        {
+                        "name_np": "दुर्गाप्रसाद",
+                        "name_en": "Durgaprasad",
+                        "spouse_np": "मुना",
+                        "spouse_en": "Muna",
+                        "relationship": "son",
+                        "children": [
+                            { "name_np": "समष्टि", "name_en": "Samashti", "relationship": "daughter" },
+                            { "name_np": "समग्र", "name_en": "Samagra", "relationship": "son" }
+                        ]
+                        },
+                        { "name_np": "अम्बिका", "name_en": "Ambika", "relationship": "daughter" },
+                        { "name_np": "चण्डिका", "name_en": "Chandika", "relationship": "daughter" }
+                    ]
+                    },
+                    {
+                    "name_np": "मोदराज",
+                    "name_en": "Modraj",
+                    "spouse_np": "ओमकुमारी",
+                    "spouse_en": "Omkumari",
+                    "relationship": "son",
+                    "children": [
+                        {
+                        "name_np": "माधव",
+                        "name_en": "Madhav",
+                        "spouse_np": "शशिकला",
+                        "spouse_en": "Sashikala",
+                        "relationship": "son",
+                        "children": [
+                            {
+                            "name_np": "साधुराम",
+                            "name_en": "Sadhuram",
+                            "spouse_np": "रबिना",
+                            "spouse_en": "Rabina",
+                            "relationship": "son",
+                            "children": [
+                                { "name_np": "बिभा", "name_en": "Bibha", "relationship": "daughter" },
+                                { "name_np": "स्वर्णिम", "name_en": "Swarnim", "relationship": "son" }
+                            ]
+                            },
+                            {
+                            "name_np": "पुष्पराम",
+                            "name_en": "Pushparam",
+                            "spouse_np": "राधा",
+                            "spouse_en": "Radha",
+                            "relationship": "son",
+                            "children": [
+                                { "name_np": "आर्जन", "name_en": "Arjan", "relationship": "son" }
+                            ]
+                            }
+                        ]
+                        },
+                        { "name_np": "उद्धव", "name_en": "Uddhav", "spouse_en": "", "relationship": "son" },
+                        {
+                        "name_np": "यादव",
+                        "name_en": "Yadav",
+                        "spouse_en": "",
+                        "relationship": "son",
+                        "children": [
+                            { "name_np": "विनोद", "name_en": "Vinod", "relationship": "son" },
+                            { "name_np": "राजेश", "name_en": "Rajesh", "relationship": "son" }
+                        ]
+                        },
+                        {
+                        "name_np": "रामप्रसाद",
+                        "name_en": "Ramprasad",
+                        "spouse_np": "विद्या",
+                        "spouse_en": "Bidhya",
+                        "relationship": "son",
+                        "children": [
+                            { "name_np": "दिनेश", "name_en": "Dinesh", "relationship": "son" },
+                            { "name_np": "दिपा", "name_en": "Dipa", "relationship": "daughter" },
+                            { "name_np": "रुपा", "name_en": "Rupa", "relationship": "daughter" },
+                            { "name_np": "निरूपा", "name_en": "Nirupa", "relationship": "daughter" }
+                        ]
+                        },
+                        {
+                        "name_np": "दयाराम",
+                        "name_en": "Dayaram",
+                        "spouse_np": "निर्मला",
+                        "spouse_en": "Nirmala",
+                        "relationship": "son",
+                        "children": [
+                            { "name_np": "सुवानी", "name_en": "Suvani", "relationship": "daughter" },
+                            { "name_np": "बिबेक", "name_en": "Bibek", "relationship": "son" }
+                        ]
+                        },
+                        {
+                        "name_np": "चमकराम",
+                        "name_en": "Chamakram",
+                        "spouse_np": "गीता",
+                        "spouse_en": "Gita",
+                        "relationship": "son",
+                        "children": [
+                            { "name_np": "प्रवेश", "name_en": "Pravesh", "relationship": "son" }
+                        ]
+                        },
+                        { "name_np": "सीता", "name_en": "Sita", "relationship": "daughter" },
+                        { "name_np": "सुभद्रा", "name_en": "Shuvadra", "relationship": "daughter" },
+                        { "name_np": "यशोदा", "name_en": "Yashoda", "relationship": "daughter" }
+                    ]
+                    },
+                    {
+                    "name_np": "प्रेमराज",
+                    "name_en": "Premraj",
+                    "spouse_np": "देवकुमारी",
+                    "spouse_en": "Devkumari",
+                    "relationship": "son",
+                    "children": [
+                        {
+                        "name_np": "शम्भुप्रसाद",
+                        "name_en": "Shambhuprasad",
+                        "spouse_np": "भगवती",
+                        "spouse_en": "Bhagawati",
+                        "relationship": "son",
+                        "children": [
+                            { "name_np": "सुवास", "name_en": "Subash", "spouse_en": "Devika", "relationship": "son" },
+                            { "name_np": "अमृता", "name_en": "Amrita", "relationship": "daughter" },
+                            { "name_np": "सुमित्रा", "name_en": "Sumitra", "relationship": "daughter" },
+                            { "name_np": "शर्मिला", "name_en": "Sharmila", "relationship": "daughter" }
+                        ]
+                        },
+                        {
+                        "name_np": "पुरुषोत्तम",
+                        "name_en": "Purushottam",
+                        "spouse_np": "विन्दा",
+                        "spouse_en": "Binda",
+                        "relationship": "son",
+                        "children": [
+                            { "name_np": "सुमन", "name_en": "Suman", "spouse_en": "Soonu", "relationship": "son" },
+                            { "name_np": "", "name_en": "", "relationship": "daughter" }
+                        ]
+                        },
+                        { "name_np": "गीता", "name_en": "Gita", "relationship": "daughter" },
+                        { "name_np": "भवानी", "name_en": "Bhawani", "relationship": "daughter" },
+                        { "name_np": "ईश्वरी", "name_en": "Ishwori", "relationship": "daughter" }
+                    ]
+                    },
+                    {
+                    "name_np": "कृष्णप्रसाद",
+                    "name_en": "Krishnaprasad",
+                    "spouse_np": "टीकाकुमारी",
+                    "spouse_en": "Tikakumari",
+                    "relationship": "son",
+                    "children": [
+                        {
+                        "name_np": "राजाराम",
+                        "name_en": "Rajaram",
+                        "spouse_np": "राधिका",
+                        "spouse_en": "Radhika",
+                        "relationship": "son",
+                        "children": [
+                            { "name_np": "कृतज्ञ", "name_en": "Kritagya", "relationship": "son" },
+                            { "name_np": "कृतिका", "name_en": "Kritika", "relationship": "daughter" }
+                        ]
+                        },
+                        { "name_np": "ज्ञानु", "name_en": "Gyanu", "relationship": "daughter" },
+                        { "name_np": "शान्ता", "name_en": "Shanta", "relationship": "daughter" },
+                        { "name_np": "विमला", "name_en": "Bimala", "relationship": "daughter" },
+                        { "name_np": "निर्मला", "name_en": "Nirmala", "relationship": "daughter" },
+                        { "name_np": "अप्सरा", "name_en": "Apsara", "relationship": "daughter" },
+                        { "name_np": "बिजया", "name_en": "Bijaya", "relationship": "daughter" },
+                        { "name_np": "उमा", "name_en": "Uma", "relationship": "daughter" },
+                        { "name_np": "मिना", "name_en": "Mina", "relationship": "daughter" },
+                        { "name_np": "गोमा", "name_en": "Goma", "relationship": "daughter" }
+                    ]
+                    },
+                    { "name_np": "भूमिप्रसाद", "name_en": "Bhumiprasad", "relationship": "son", "children": [] },
+                    { "name_np": "जगत कुमारी", "name_en": "Jagat Kumari", "relationship": "daughter" },
+                    { "name_np": "योगमाया", "name_en": "Yogmaya", "relationship": "daughter" },
+                    { "name_np": "कर्णमाया", "name_en": "Karnamaya", "relationship": "daughter" },
+                    { "name_np": "देवमाया", "name_en": "Devmaya", "relationship": "daughter" },
+                    { "name_np": "युगमाया", "name_en": "Yugmaya", "relationship": "daughter" }
+                ]
+                }
+            ]
+        }
+    ]
+    }
+      
+  }
