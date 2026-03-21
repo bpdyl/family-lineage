@@ -60,9 +60,12 @@ export default function Sidebar({ open, onClose }) {
           ))}
         </nav>
 
-        <div className="p-4 border-t border-[var(--color-border)]">
+        <div className="p-4 border-t border-[var(--color-border)] space-y-1">
           <p className="text-[10px] text-[var(--color-text-muted)] text-center">
             <span className="font-nepali">पौड्याल वंशावली</span> &middot; Paudyal Family
+          </p>
+          <p className="text-[10px] text-[var(--color-text-muted)] text-center">
+            Created by <span className="font-nepali">विवेक पौड्याल</span> &middot; Bibek Paudyal
           </p>
         </div>
       </aside>
