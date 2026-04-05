@@ -1,15 +1,36 @@
 import { Router } from 'express';
 import multer from 'multer';
+import fs from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
 import { getDb } from '../config/db.js';
 import { authenticateToken, requireAdmin } from '../middleware/auth.js';
 import { validate, memberCreateSchema, memberUpdateSchema, extraFieldSchema } from '../utils/validators.js';
 import { generateMemberId } from '../utils/idGenerator.js';
-import { getMemberById } from '../services/tree.service.js';
+import { getMemberById, exportTreeAsSeedJson } from '../services/tree.service.js';
+import { uploadBackup, isGdriveConfigured } from '../services/gdrive.service.js';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
+const SEED_FILE_PATH = path.join(__dirname, '..', '..', '..', 'family_lineage.json');
 const router = Router();
+
+/** Sync current DB state back to seed file and Google Drive after mutations */
+function syncSeedFile() {
+  try {
+    const seedData = exportTreeAsSeedJson();
+    const jsonStr = JSON.stringify(seedData, null, 4);
+    fs.writeFileSync(SEED_FILE_PATH, jsonStr, 'utf-8');
+
+    // Also backup to Google Drive (fire-and-forget, don't block the response)
+    if (isGdriveConfigured()) {
+      uploadBackup(jsonStr).catch(err => {
+        console.error('Auto Google Drive backup failed:', err.message);
+      });
+    }
+  } catch (err) {
+    console.error('Auto-sync seed file failed:', err.message);
+  }
+}
 
 const storage = multer.diskStorage({
   destination: path.join(__dirname, '..', '..', 'uploads'),
@@ -87,9 +108,13 @@ router.post('/', authenticateToken, requireAdmin, validate(memberCreateSchema), 
     VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
   `).run(id, data.name_np, data.name_en, data.spouse_np || '', data.spouse_en || '', data.parent_id, data.relationship, gender, genLevel, branchRoot, data.notes || '');
 
+  syncSeedFile();
+
   const member = getMemberById(id);
   res.status(201).json(member);
 });
+
+const ALLOWED_UPDATE_FIELDS = new Set(['name_np', 'name_en', 'spouse_np', 'spouse_en', 'relationship', 'notes']);
 
 router.put('/:id', authenticateToken, requireAdmin, validate(memberUpdateSchema), (req, res) => {
   const db = getDb();
@@ -105,7 +130,7 @@ router.put('/:id', authenticateToken, requireAdmin, validate(memberUpdateSchema)
   const values = [];
 
   for (const [key, value] of Object.entries(data)) {
-    if (value !== undefined) {
+    if (value !== undefined && ALLOWED_UPDATE_FIELDS.has(key)) {
       updates.push(`${key} = ?`);
       values.push(value);
 
@@ -124,6 +149,8 @@ router.put('/:id', authenticateToken, requireAdmin, validate(memberUpdateSchema)
   values.push(id);
 
   db.prepare(`UPDATE members SET ${updates.join(', ')} WHERE id = ?`).run(...values);
+
+  syncSeedFile();
 
   const member = getMemberById(id);
   res.json(member);

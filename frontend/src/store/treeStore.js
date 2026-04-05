@@ -1,6 +1,25 @@
 import { create } from 'zustand';
 import api from '../services/api';
 
+function countNodes(node) {
+  if (!node) return 0;
+  let total = 1;
+  if (Array.isArray(node.children)) {
+    for (const child of node.children) {
+      total += countNodes(child);
+    }
+  }
+  return total;
+}
+
+function normalizeTreePayload(payload) {
+  if (!Array.isArray(payload)) return payload;
+  if (payload.length === 0) return null;
+
+  // Backward compatibility: if API returns multiple roots, prefer the largest lineage.
+  return [...payload].sort((a, b) => countNodes(b) - countNodes(a))[0] || null;
+}
+
 const useTreeStore = create((set, get) => ({
   treeData: null,
   flatMembers: [],
@@ -16,9 +35,10 @@ const useTreeStore = create((set, get) => ({
     set({ loading: true, error: null });
     try {
       const { data } = await api.get('/tree');
+      const normalizedTree = normalizeTreePayload(data);
       const expanded = new Set();
-      collectIds(data, expanded, 2);
-      set({ treeData: data, loading: false, expandedNodes: expanded });
+      collectIds(normalizedTree, expanded, 2);
+      set({ treeData: normalizedTree, loading: false, expandedNodes: expanded });
     } catch (err) {
       set({ error: err.message, loading: false });
     }

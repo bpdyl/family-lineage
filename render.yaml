@@ -21,3 +21,7 @@ services:
           type: web
           name: family-lineage
           property: host
+      - key: GOOGLE_SERVICE_ACCOUNT_KEY
+        sync: false
+      - key: GOOGLE_DRIVE_FOLDER_ID
+        sync: false

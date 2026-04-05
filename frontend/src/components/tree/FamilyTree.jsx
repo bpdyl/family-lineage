@@ -152,8 +152,8 @@ export default function FamilyTree({ onNodeSelect }) {
           transformOrigin: '0 0',
         }}
       >
-        {nodes.map(node => (
-          <div key={node.id} className="pointer-events-auto" style={{ position: 'absolute', left: 0, top: 0 }}>
+        {nodes.map((node, index) => (
+          <div key={node.id || `node-${index}`} className="pointer-events-auto" style={{ position: 'absolute', left: 0, top: 0 }}>
             <TreeNode
               node={node}
               isSelected={selectedNode?.id === node.id}

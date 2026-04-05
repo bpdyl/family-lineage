@@ -7,7 +7,9 @@
   "scripts": {
     "start": "node src/index.js",
     "dev": "node --watch src/index.js",
-    "seed": "node src/models/seed.js"
+    "seed": "node src/models/seed.js",
+    "cleanup-placeholders": "node src/models/cleanupPlaceholders.js",
+    "full-sync": "node src/models/fullSync.js"
   },
   "dependencies": {
     "bcryptjs": "^2.4.3",
@@ -17,6 +19,7 @@
     "dotenv": "^16.4.7",
     "express": "^4.21.2",
     "express-rate-limit": "^7.5.0",
+    "googleapis": "^171.4.0",
     "helmet": "^8.0.0",
     "jsonwebtoken": "^9.0.2",
     "multer": "^1.4.5-lts.1",
